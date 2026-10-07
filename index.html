@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tennis Game — Master Every Rally | The Ultimate Tennis Experience</title>
+  <meta name="description" content="Step onto the court with Tennis Game. Experience championship tournaments, realistic rally physics, pro player rankings, precision match training, and intense esports competition.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23FB7185'/><path d='M20 30C35 40 35 60 20 70M80 30C65 40 65 60 80 70' stroke='%230B0709' stroke-width='6' fill='none'/></svg>">
+
+  <!-- Bootstrap 5 & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER / NAVIGATION
+       ========================================== -->
+  <header class="navbar-noir">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand-logo" id="headerLogo">
+        <img src="assets/images/brand-logo-icon.svg" alt="Tennis Game Logo" class="brand-logo-icon">
+        <span class="brand-logo-text">TENNIS <span>GAME</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="d-none d-lg-block">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link-custom active" id="navHome">Home</a></li>
+          <li><a href="about.html" class="nav-link-custom" id="navAbout">About</a></li>
+          <li><a href="menu.html" class="nav-link-custom" id="navMenu">Tournaments</a></li>
+          <li><a href="contact.html" class="nav-link-custom" id="navContact">Play Now</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA Button -->
+      <div class="d-none d-lg-block btn-nav-desktop">
+        <a href="contact.html" class="btn-noir btn-noir-primary" id="headerCtaBtn">
+          Join Tournament <i class="bi bi-trophy-fill"></i>
+        </a>
+      </div>
+
+      <!-- Hamburger Button (Mobile/Tablet Right Side) -->
+      <button class="hamburger-toggle d-lg-none" aria-label="Toggle navigation menu" id="hamburgerMenuBtn">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Full-Screen Mobile Navigation Panel -->
+  <div class="mobile-nav-panel" id="mobileNavPanel">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="brand-logo" id="mobileLogo">
+        <img src="assets/images/brand-logo-icon.svg" alt="Tennis Game Logo" class="brand-logo-icon">
+        <span class="brand-logo-text">TENNIS <span>GAME</span></span>
+      </a>
+      <button class="mobile-nav-close" aria-label="Close navigation menu" id="mobileNavCloseBtn">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="mobile-nav-body">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Tournaments</a></li>
+        <li><a href="contact.html">Play Now</a></li>
+      </ul>
+      <a href="contact.html" class="btn-noir btn-noir-primary" id="mobileCtaBtn">
+        Join Tournament <i class="bi bi-trophy-fill"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       HERO SECTION — CINEMATIC LUXURY
+       ========================================== -->
+  <section class="hero-section" id="heroSection">
+    <div class="hero-bg-container">
+      <img src="assets/images/hero_bar.jpg" alt="Tennis Game Championship Arena" class="hero-bg-image">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-particles"></div>
+
+    <div class="container hero-content">
+      <div class="eyebrow reveal-fade-down" id="heroEyebrow">TENNIS GAME EXPERIENCE <i class="bi bi-trophy-fill beer-mug-float-icon"></i></div>
+      <h1 class="hero-title reveal-fade-up" id="heroTitle">
+        MASTER EVERY RALLY<br>
+        <span>PLAY. COMPETE. CONQUER.</span>
+      </h1>
+      <p class="hero-desc reveal-fade-up" data-delay="150" id="heroDesc">
+        Step onto center court. Experience real-time tournament matches, pro-tier rankings, precision gameplay mechanics, and intense competitive rallies.
+      </p>
+      <div class="hero-ctas reveal-fade-up" data-delay="300">
+        <a href="contact.html" class="btn-noir btn-noir-primary" id="heroReserveBtn">
+          Start Playing <i class="bi bi-arrow-right-short fs-4"></i>
+        </a>
+        <a href="menu.html" class="btn-noir btn-noir-outline" id="heroExploreMenuBtn">
+          Explore Game Modes <i class="bi bi-controller"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="mouse-icon">
+        <div class="mouse-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       MATCH STATISTICS (SPLIT LAYOUT)
+       ========================================== -->
+  <section class="stats-section" id="statsSection">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <!-- Left Side: Dark Charcoal & Court Glow -->
+        <div class="col-lg-6 stats-split-left reveal-slide-left">
+          <div class="eyebrow">Our Championship Legacy</div>
+          <div class="stat-huge-number stat-count" data-target="15" data-suffix="+">15+</div>
+          <h3 class="font-serif fs-1 text-cream mb-3">Years of Grand Slam Action</h3>
+          <p class="text-muted-custom lead" style="max-width: 500px;">
+            Powering elite tennis tournaments, digital court simulations, and competitive sports leagues for players across the globe.
+          </p>
+        </div>
+
+        <!-- Right Side: Green Tint -->
+        <div class="col-lg-6 stats-split-right reveal-slide-right">
+          <div class="eyebrow">By The Numbers</div>
+
+          <div class="stat-item mt-4">
+            <div class="stat-num stat-count" data-target="500" data-suffix="K+">500K+</div>
+            <div class="stat-label">Championship Match Points Played</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-num stat-count" data-target="80" data-suffix="+">80+</div>
+            <div class="stat-label">Global Tournament Circuits</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-num stat-count" data-target="250" data-suffix="K+">250K+</div>
+            <div class="stat-label">Ranked Players Competing Daily</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       GAMEPLAY & FEATURES (EXPERIENCE CARDS)
+       ========================================== -->
+  <section class="experience-section" id="experienceSection">
+    <div class="container">
+      <div class="text-center mb-5 reveal-fade-up">
+        <div class="eyebrow">Gameplay & Mechanics</div>
+        <h2 class="section-title">The Court Is Yours</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Real-Time Gameplay -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="100">
+          <div class="experience-card" id="expCard1">
+            <div class="exp-icon-box">
+              <i class="bi bi-controller"></i>
+            </div>
+            <h3 class="exp-title">Real-Time Gameplay</h3>
+            <p class="exp-desc">
+              Ultra-responsive shot controls with realistic top-spin, slice, and powerful baseline rallies.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Pro Tournaments -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="200">
+          <div class="experience-card" id="expCard2">
+            <div class="exp-icon-box">
+              <i class="bi bi-trophy-fill"></i>
+            </div>
+            <h3 class="exp-title">Pro Tournaments</h3>
+            <p class="exp-desc">
+              Compete in global Grand Slam circuits, championship ladders, and seasonal tournaments.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Match Analytics -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="300">
+          <div class="experience-card" id="expCard3">
+            <div class="exp-icon-box">
+              <i class="bi bi-activity"></i>
+            </div>
+            <h3 class="exp-title">Match Analytics</h3>
+            <p class="exp-desc">
+              Track shot accuracy, first-serve percentages, unforced errors, and win rates in real time.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Training & Drills -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="400">
+          <div class="experience-card" id="expCard4">
+            <div class="exp-icon-box">
+              <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <h3 class="exp-title">Training & Drills</h3>
+            <p class="exp-desc">
+              Sharpen your reaction times, master serve mechanics, and climb the competitive rankings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FEATURED TOURNAMENTS SECTION
+       ========================================== -->
+  <section class="drinks-section" id="drinksSection">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <div class="eyebrow">Championship Circuits</div>
+        <h2 class="section-title">Pro Tournaments & Matches</h2>
+        <p class="section-subtitle">
+          Intense rallies. Elite competitors. Unstoppable championship energy.
+        </p>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <!-- Tournament 1 -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="100">
+          <div class="drink-card" id="drinkCard1">
+            <div class="drink-img-wrap">
+              <img src="assets/images/cocktail_espresso.jpg" alt="Grand Open Championship Match" class="drink-img">
+              <span class="drink-badge">$50K</span>
+            </div>
+            <div class="drink-body">
+              <h3 class="drink-name">World Grand Open</h3>
+              <p class="drink-desc">
+                Championship 5-set hardcourt showdown featuring the world's top-seeded tennis athletes.
+              </p>
+              <div class="drink-accent">
+                <i class="bi bi-award-fill"></i> Grand Slam Tier
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tournament 2 -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="200">
+          <div class="drink-card" id="drinkCard2">
+            <div class="drink-img-wrap">
+              <img src="assets/images/cocktail_golden_hour.jpg" alt="Clay Court Masters Match" class="drink-img">
+              <span class="drink-badge">$35K</span>
+            </div>
+            <div class="drink-body">
+              <h3 class="drink-name">Red Clay Masters</h3>
+              <p class="drink-desc">
+                High-endurance clay court championship with heavy topspin dynamics and sliding baseline defense.
+              </p>
+              <div class="drink-accent">
+                <i class="bi bi-shield-check"></i> Masters 1000
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tournament 3 -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="300">
+          <div class="drink-card" id="drinkCard3">
+            <div class="drink-img-wrap">
+              <img src="assets/images/cocktail_negroni.jpg" alt="Grass Court Trophy Match" class="drink-img">
+              <span class="drink-badge">$40K</span>
+            </div>
+            <div class="drink-body">
+              <h3 class="drink-name">Grass Court Trophy</h3>
+              <p class="drink-desc">
+                Fast-paced serve-and-volley tournament contested on pristine traditional grass lawns.
+              </p>
+              <div class="drink-accent">
+                <i class="bi bi-lightning-fill"></i> Fast Surface
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tournament 4 -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up" data-delay="400">
+          <div class="drink-card" id="drinkCard4">
+            <div class="drink-img-wrap">
+              <img src="assets/images/cocktail_mojito.jpg" alt="Floodlight Arena Night Match" class="drink-img">
+              <span class="drink-badge">$25K</span>
+            </div>
+            <div class="drink-body">
+              <h3 class="drink-name">Night Arena Shootout</h3>
+              <p class="drink-desc">
+                High-voltage floodlight night matches under electric arena lights with instant tiebreak shootouts.
+              </p>
+              <div class="drink-accent">
+                <i class="bi bi-stars"></i> Night Session
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5 reveal-fade-up">
+        <a href="menu.html" class="btn-noir btn-noir-outline">
+          View All Tournaments <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ATMOSPHERIC VIDEO SECTION
+       ========================================== -->
+  <section class="video-section" id="videoSection">
+    <img src="assets/images/video_thumb.jpg" alt="Tennis Game Match Atmosphere" class="video-bg">
+    <div class="video-overlay"></div>
+
+    <div class="container video-content reveal-scale">
+      <div class="play-btn-pulse" id="videoPlayBtn" role="button" aria-label="Play tennis match showcase video">
+        <i class="bi bi-play-fill"></i>
+      </div>
+      <div class="eyebrow">Center Court Showcase</div>
+      <h2 class="section-title">Feel The Energy</h2>
+      <p class="section-subtitle text-cream">
+        From the opening ace to championship match point, experience every electrifying stroke in breathtaking detail.
+      </p>
+    </div>
+  </section>
+
+  <!-- Modal Lightbox for Video -->
+  <div class="video-lightbox-modal" id="videoLightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxCloseBtn"><i class="bi bi-x-lg"></i></button>
+      <div class="p-4 text-center">
+        <div class="eyebrow mb-2">TENNIS GAME SHOWCASE</div>
+        <h3 class="mb-3 font-serif fs-2">Championship Gameplay</h3>
+        <img src="assets/images/video_thumb.jpg" alt="Tennis court match action" class="img-fluid rounded mb-3">
+        <p class="text-muted-custom mb-4">Experience high-speed serves, precision racket angles, tactical drop shots, and the roaring energy of world-class center court crowds.</p>
+        <a href="contact.html" class="btn-noir btn-noir-primary">Start Your Tennis Match <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       EVENTS / MATCH SCHEDULE SECTION
+       ========================================== -->
+  <section class="events-section" id="eventsSection">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <div class="eyebrow">Weekly Match Schedule</div>
+        <h2 class="section-title">Upcoming Tournaments & Challenges</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <!-- Friday Event -->
+        <div class="col-md-4 reveal-fade-up" data-delay="100">
+          <div class="event-card" id="eventCard1">
+            <div class="event-img-wrap">
+              <img src="assets/images/event_friday.jpg" alt="Friday Night Smash Match" class="event-img">
+              <span class="event-date-tag">Every Friday</span>
+            </div>
+            <div class="event-content">
+              <h3 class="event-title">Friday Night Smash</h3>
+              <p class="event-desc">
+                Open doubles shootout and fast-paced tiebreak challenges with live ranking updates and leaderboard prizes.
+              </p>
+              <a href="contact.html" class="event-link">
+                Register Slot <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Saturday Event -->
+        <div class="col-md-4 reveal-fade-up" data-delay="200">
+          <div class="event-card" id="eventCard2">
+            <div class="event-img-wrap">
+              <img src="assets/images/event_saturday.jpg" alt="Saturday Grand Slam Final" class="event-img">
+              <span class="event-date-tag">Every Saturday</span>
+            </div>
+            <div class="event-content">
+              <h3 class="event-title">Grand Slam Super Saturday</h3>
+              <p class="event-desc">
+                Our flagship championship tournament featuring top-seeded singles showdowns, pro commentary, and trophy ceremonies.
+              </p>
+              <a href="contact.html" class="event-link">
+                Enter Bracket <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sunday Event -->
+        <div class="col-md-4 reveal-fade-up" data-delay="300">
+          <div class="event-card" id="eventCard3">
+            <div class="event-img-wrap">
+              <img src="assets/images/event_sunday.jpg" alt="Sunday Skills Bootcamp" class="event-img">
+              <span class="event-date-tag">Every Sunday</span>
+            </div>
+            <div class="event-content">
+              <h3 class="event-title">Sunday Skills Bootcamp</h3>
+              <p class="event-desc">
+                Masterclass training drills, serve speed tests, and tactical strategy sessions guided by certified tennis coaches.
+              </p>
+              <a href="contact.html" class="event-link">
+                Join Bootcamp <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TESTIMONIALS SECTION
+       ========================================== -->
+  <section class="testimonials-section" id="testimonialsSection">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <div class="eyebrow">Player Reviews</div>
+        <h2 class="section-title">Champions Play Here</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-lg-4 col-md-12 reveal-fade-up" data-delay="100">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "The court physics and competitive matchmaking are unmatched. Every point feels high-stakes, and the ball spin mechanics feel incredibly lifelike."
+            </p>
+            <div class="author-box">
+              <img src="assets/images/author1.svg" alt="Carlos Mendez Avatar" class="author-avatar">
+              <div>
+                <div class="author-name">Carlos Mendez</div>
+                <div class="author-role">Championship Finalist</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 reveal-fade-up" data-delay="200">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Tennis Game nails the exact balance between tactical depth and high-octane fun. The Saturday Grand Slam tournaments are an absolute thrill!"
+            </p>
+            <div class="author-box">
+              <img src="assets/images/author2.svg" alt="Sophia Williams Avatar" class="author-avatar">
+              <div>
+                <div class="author-name">Sophia Williams</div>
+                <div class="author-role">Tennis Academy Coach</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 reveal-fade-up" data-delay="300">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "The real-time match analytics and stroke training drills helped me climb into the top division. It's the ultimate competitive tennis experience."
+            </p>
+            <div class="author-box">
+              <img src="assets/images/author3.svg" alt="Marcus Thorne Avatar" class="author-avatar">
+              <div>
+                <div class="author-name">Marcus Thorne</div>
+                <div class="author-role">Ranked Pro Competitor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DRAMATIC CTA SECTION
+       ========================================== -->
+  <section class="dramatic-cta-section" id="dramaticCtaSection">
+    <div class="container reveal-scale text-center d-flex flex-column align-items-center">
+      <div class="eyebrow">Competitive Tennis Arena</div>
+      <h2 class="dramatic-cta-title">
+        GAME. SET.<br>
+        <span>MATCH.</span>
+      </h2>
+      <p class="section-subtitle text-cream mb-4 mx-auto" style="max-width: 550px;">
+        Power your next match. Step onto center court, test your skills against the world's finest players, and claim your championship title.
+      </p>
+      <a href="contact.html" class="btn-noir btn-noir-primary py-3 px-5 fs-6">
+        JOIN THE NEXT MATCH <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer-noir">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Left: Brand Info & Editorial Statement -->
+        <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+          <a href="index.html" class="footer-brand" id="footerLogo">
+            <img src="assets/images/brand-logo-icon.svg" alt="Tennis Game Logo" class="brand-logo-icon">
+            <span class="brand-logo-text">TENNIS <span>GAME</span></span>
+          </a>
+          <p class="footer-tagline">"Play. Compete. Conquer."</p>
+          <h4 class="font-serif text-gold fs-5 mb-3">POWER YOUR NEXT MATCH.</h4>
+          <p class="text-muted-custom text-small" style="font-size: 0.9rem;">
+            CHAMPIONSHIP MATCHES • PRO RANKINGS • REAL-TIME RALLIES • TOURNAMENTS<br>
+            Delivering high-energy tennis gameplay across all court surfaces.
+          </p>
+          <div class="social-icons mt-4">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Middle: Quick Links -->
+        <div class="col-6 col-md-6 col-lg-3">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Tournaments</a></li>
+            <li><a href="contact.html">Play Now</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Match Schedules -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <h4 class="footer-heading">Court & Match Hours</h4>
+          <div class="text-muted-custom" style="font-size: 0.92rem; line-height: 1.8;">
+            <p class="mb-2"><strong class="text-gold">Monday – Thursday:</strong><br>6:00 AM – 10:00 PM</p>
+            <p class="mb-2"><strong class="text-gold">Friday – Saturday:</strong><br>6:00 AM – 12:00 AM</p>
+            <p class="mb-0"><strong class="text-gold">Sunday:</strong><br>7:00 AM – 9:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 Tennis Game. All Rights Reserved. Master Every Rally.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tournaments & Game Modes — Tennis Game | Championship Selection</title>
+  <meta name="description" content="Explore pro tournaments, competitive game modes, training drill packages, and championship season passes at Tennis Game. Step onto the court and play.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23FB7185'/><path d='M20 30C35 40 35 60 20 70M80 30C65 40 65 60 80 70' stroke='%230B0709' stroke-width='6' fill='none'/></svg>">
+
+  <!-- Bootstrap 5 & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER / NAVIGATION
+       ========================================== -->
+  <header class="navbar-noir">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand-logo" id="headerLogo">
+        <img src="assets/images/brand-logo-icon.svg" alt="Tennis Game Logo" class="brand-logo-icon">
+        <span class="brand-logo-text">TENNIS <span>GAME</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="d-none d-lg-block">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link-custom" id="navHome">Home</a></li>
+          <li><a href="about.html" class="nav-link-custom" id="navAbout">About</a></li>
+          <li><a href="menu.html" class="nav-link-custom active" id="navMenu">Tournaments</a></li>
+          <li><a href="contact.html" class="nav-link-custom" id="navContact">Play Now</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA Button -->
+      <div class="d-none d-lg-block btn-nav-desktop">
+        <a href="contact.html" class="btn-noir btn-noir-primary" id="headerCtaBtn">
+          Join Tournament <i class="bi bi-trophy-fill"></i>
+        </a>
+      </div>
+
+      <!-- Hamburger Button (Mobile/Tablet Right Side) -->
+      <button class="hamburger-toggle d-lg-none" aria-label="Toggle navigation menu" id="hamburgerMenuBtn">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Full-Screen Mobile Navigation Panel -->
+  <div class="mobile-nav-panel" id="mobileNavPanel">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="brand-logo" id="mobileLogo">
+        <img src="assets/images/brand-logo-icon.svg" alt="Tennis Game Logo" class="brand-logo-icon">
+        <span class="brand-logo-text">TENNIS <span>GAME</span></span>
+      </a>
+      <button class="mobile-nav-close" aria-label="Close navigation menu" id="mobileNavCloseBtn">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="mobile-nav-body">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html" class="active">Tournaments</a></li>
+        <li><a href="contact.html">Play Now</a></li>
+      </ul>
+      <a href="contact.html" class="btn-noir btn-noir-primary" id="mobileCtaBtn">
+        Join Tournament <i class="bi bi-trophy-fill"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       PAGE HERO
+       ========================================== -->
+  <section class="page-hero">
+    <div class="page-hero-bg-container">
+      <img src="assets/images/menu_hero.jpg" alt="Tennis Tournament Matches Spread" class="page-hero-bg-image">
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="hero-particles"></div>
+
+    <div class="container page-hero-content">
+      <div class="eyebrow reveal-fade-down">Championship Formats & Circuits <i class="bi bi-trophy-fill beer-mug-float-icon"></i></div>
+      <h1 class="section-title reveal-fade-up">CHAMPIONSHIP MODES & MATCHES</h1>
+      <p class="section-subtitle text-cream reveal-fade-up" data-delay="150">
+        Choose your format, step onto the court, and dominate every rally.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       MENU SECTION
+       ========================================== -->
+  <section class="menu-section" id="menuSection">
+    <div class="container">
+      
+      <!-- Category Filter Navigation -->
+      <div class="menu-filter-nav reveal-fade-up" id="menuFilterNav">
+        <button class="filter-btn active" data-filter="all">All Formats</button>
+        <button class="filter-btn" data-filter="cocktails">Grand Slam Circuits</button>
+        <button class="filter-btn" data-filter="classics">Competitive Modes</button>
+        <button class="filter-btn" data-filter="smallbites">Training & Drills</button>
+        <button class="filter-btn" data-filter="desserts">Pro Passes & Gear</button>
+      </div>
+
+      <!-- Highlight Visual Banner -->
+      <div class="row mb-5 justify-content-center reveal-scale">
+        <div class="col-lg-10">
+          <div class="story-img-box position-relative text-center p-4" style="background: var(--bg-card); border-color: var(--border-gold);">
+            <img src="assets/images/menu_hero.jpg" alt="Tennis Game match and tournament action" class="mb-3 rounded opacity-75" style="max-height: 260px; width: 100%; object-fit: cover;">
+            <p class="text-gold font-serif fs-4 mb-0">"Every stroke matters. Every rally defines your legacy."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+          <!-- 1. GRAND SLAM CIRCUITS CATEGORY -->
+          <div class="menu-category-block" data-category="cocktails">
+            <h3 class="menu-category-title"><i class="bi bi-trophy-fill text-gold"></i> GRAND SLAM & PRO TOURNAMENTS</h3>
+            
+            <div class="menu-row-item reveal-fade-up" data-delay="100">
+              <div class="menu-row-header">
+                <span class="menu-row-name">World Grand Open Championship</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$50,000 Pool</span>
+              </div>
+              <p class="menu-row-desc">Championship 5-set hardcourt singles bracket featuring 64 international seeded competitors.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="150">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Red Clay Masters 1000</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$35,000 Pool</span>
+              </div>
+              <p class="menu-row-desc">High-endurance European clay tournament requiring masterful baseline sliding and heavy topspin.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="200">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Grass Court Classic Trophy</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$40,000 Pool</span>
+              </div>
+              <p class="menu-row-desc">Ultra-fast serve-and-volley grass showdown with razor-sharp slices and reflex approaches.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="250">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Floodlight Night Arena Shootout</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$25,000 Pool</span>
+              </div>
+              <p class="menu-row-desc">Electrifying night session under arena stadium lights with fast tiebreak formats and instant knockout.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="300">
+              <div class="menu-row-header">
+                <span class="menu-row-name">World Pro Doubles Cup</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$30,000 Pool</span>
+              </div>
+              <p class="menu-row-desc">High-tempo 2v2 tactical team tournament requiring exceptional court communication and reflex volleys.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="350">
+              <div class="menu-row-header">
+                <span class="menu-row-name">All-Surface Super Cup</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$60,000 Pool</span>
+              </div>
+              <p class="menu-row-desc">The ultimate test of tennis versatility played across rotating hard, clay, and grass courts.</p>
+            </div>
+          </div>
+
+          <!-- 2. COMPETITIVE GAME MODES CATEGORY -->
+          <div class="menu-category-block mt-5" data-category="classics">
+            <h3 class="menu-category-title"><i class="bi bi-controller text-gold"></i> COMPETITIVE MATCH MODES</h3>
+            
+            <div class="menu-row-item reveal-fade-up" data-delay="100">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Ranked 1v1 Singles Ladder</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$10 Entry</span>
+              </div>
+              <p class="menu-row-desc">Instant competitive matchmaking against similarly skilled players to climb the global divisions.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="150">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Super Tiebreak Sprint</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$5 Entry</span>
+              </div>
+              <p class="menu-row-desc">First to 10 points pressure-cooker tiebreak battle with instant rating bonuses and rewards.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="200">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Endless Rally Gauntlet</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$8 Entry</span>
+              </div>
+              <p class="menu-row-desc">Survive increasingly difficult rally ball speeds and aggressive court target placements.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="250">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Weekly League Championship</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$15 Entry</span>
+              </div>
+              <p class="menu-row-desc">Scheduled round-robin matches with divisional promotion, relegation brackets, and trophies.</p>
+            </div>
+          </div>
+
+          <!-- 3. TRAINING & DRILLS CATEGORY -->
+          <div class="menu-category-block mt-5" data-category="smallbites">
+            <h3 class="menu-category-title"><i class="bi bi-lightning-charge text-gold"></i> TRAINING & SKILL DRILLS</h3>
+            
+            <div class="menu-row-item reveal-fade-up" data-delay="100">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Ace Velocity & Serve Precision</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$20 Module</span>
+              </div>
+              <p class="menu-row-desc">Target practice drills for flat rocket serves, wide kick serves, and slice placements on the T-line.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="150">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Crosscourt Baseline Endurance</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$18 Module</span>
+              </div>
+              <p class="menu-row-desc">Deep rally consistency drills focusing on topspin depth, footwork recovery, and defensive lobs.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="200">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Net Touch & Drop Shot Clinic</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$15 Module</span>
+              </div>
+              <p class="menu-row-desc">Feather-light drop shots, sharp reflex overhead smashes, and angled volley control at the net.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="250">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Tactical Film & Pattern Analytics</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$25 Module</span>
+              </div>
+              <p class="menu-row-desc">Break down opponent rally patterns, return-of-serve positioning, and break-point conversion tactics.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="300">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Speed Agility & Court Coverage</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$16 Module</span>
+              </div>
+              <p class="menu-row-desc">Reaction speed drills, split-step timing optimization, and explosive lateral baseline recovery.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="350">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Grand Slam Masterclass Bootcamp</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$35 Module</span>
+              </div>
+              <p class="menu-row-desc">Comprehensive 5-day training regimen covering mental composure, tiebreak strategy, and physical stamina.</p>
+            </div>
+          </div>
+
+          <!-- 4. PRO PASSES & GEAR CATEGORY -->
+          <div class="menu-category-block mt-5" data-category="desserts">
+            <h3 class="menu-category-title"><i class="bi bi-award text-gold"></i> PRO PASSES & GEAR UPGRADES</h3>
+            
+            <div class="menu-row-item reveal-fade-up" data-delay="100">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Pro Season Championship Pass</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$39 / Season</span>
+              </div>
+              <p class="menu-row-desc">Full access to all seasonal tournament brackets, ranking multipliers, and exclusive custom court skins.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="150">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Custom Carbon Graphite Racket Pack</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$29 Pack</span>
+              </div>
+              <p class="menu-row-desc">High-performance lightweight frames tuned for explosive baseline velocity and pin-point string control.</p>
+            </div>
+
+            <div class="menu-row-item reveal-fade-up" data-delay="200">
+              <div class="menu-row-header">
+                <span class="menu-row-name">Elite Coach 1-on-1 Review Pass</span>
+                <span class="menu-row-line"></span>
+                <span class="menu-row-price">$49 Pass</span>
+              </div>
+              <p class="menu-row-desc">Personalized match replay video review with automated heatmaps and tailored drill recommendations.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="text-center mt-5 reveal-fade-up">
+        <a href="contact.html" class="btn-noir btn-noir-primary">
+          Register For Next Match <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SURFACE & RACKET SYNERGY SECTION
+       ========================================== -->
+  <section class="pairing-section" id="pairingSection">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <div class="eyebrow">Strategic Synergy</div>
+        <h2 class="section-title">Surface & Racket Matchups</h2>
+        <p class="section-subtitle text-cream">
+          Optimized equipment and court combinations engineered to elevate your match-winning percentage.
+        </p>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row g-4 mt-2 justify-content-center">
+        <!-- Pairing 1 -->
+        <div class="col-lg-4 col-md-6 reveal-fade-up" data-delay="100">
+          <div class="pairing-card">
+            <div class="pairing-img-split">
+              <img src="assets/images/cocktail_espresso.jpg" alt="Hardcourt Power Matchup">
+              <span class="pairing-badge-overlay"><i class="bi bi-lightning-fill"></i> Power Synergy</span>
+            </div>
+            <div class="pairing-body">
+              <h3 class="pairing-title">The Hardcourt Cannon</h3>
+              <div class="pairing-subtitle">Acrylic Hardcourt + Heavy Spin Racket</div>
+              <p class="pairing-desc">
+                Explosive true-bounce baseline courts paired with open string patterns for overwhelming flat pace and heavy topspin winners.
+              </p>
+              <div class="pairing-note-tag">
+                <i class="bi bi-quote text-gold me-1"></i> "Maximum baseline velocity & aggressive first-serves"
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pairing 2 -->
+        <div class="col-lg-4 col-md-6 reveal-fade-up" data-delay="200">
+          <div class="pairing-card">
+            <div class="pairing-img-split">
+              <img src="assets/images/cocktail_golden_hour.jpg" alt="Clay Court Control Matchup">
+              <span class="pairing-badge-overlay"><i class="bi bi-shield-check"></i> Clay Mastery</span>
+            </div>
+            <div class="pairing-body">
+              <h3 class="pairing-title">The Clay Grinder</h3>
+              <div class="pairing-subtitle">Red Clay + High-Tension Control Frame</div>
+              <p class="pairing-desc">
+                High-bounce slow clay surfaces paired with tight control stringing to master endless slide recoveries and angled drop shots.
+              </p>
+              <div class="pairing-note-tag">
+                <i class="bi bi-quote text-gold me-1"></i> "Extended spin control & steady endurance rallies"
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pairing 3 -->
+        <div class="col-lg-4 col-md-6 reveal-fade-up" data-delay="300">
+          <div class="pairing-card">
+            <div class="pairing-img-split">
+              <img src="assets/images/cocktail_negroni.jpg" alt="Grass Fast Attack Matchup">
+              <span class="pairing-badge-overlay"><i class="bi bi-stars"></i> Grass Attack</span>
+            </div>
+            <div class="pairing-body">
+              <h3 class="pairing-title">The Serve & Volley</h3>
+              <div class="pairing-subtitle">All-England Grass + Stiff Aerodynamic Frame</div>
+              <p class="pairing-desc">
+                Low-skidding fast grass lawns paired with a quick-response racket frame for lethal slice serves and lightning net volleys.
+              </p>
+              <div class="pairing-note-tag">
+                <i class="bi bi-quote text-gold me-1"></i> "Rapid net approaches with low-bounce reflex touch"
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CHAMPIONSHIP CLUB & ARENA PASSES
+       ========================================== -->
+  <section class="vip-packages-section" id="vipPackagesSection">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <div class="eyebrow">Exclusive Player Memberships</div>
+        <h2 class="section-title">Championship Club & Arena Passes</h2>
+        <p class="section-subtitle text-cream">
+          Upgrade your player status with priority tournament entry, customized match analytics, and VIP center court perks.
+        </p>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="row g-4 mt-2 justify-content-center">
+        <!-- Package 1: Court Club Pass -->
+        <div class="col-lg-5 reveal-slide-left" data-delay="100">
+          <div class="vip-card-package">
+            <div class="ribbon-gold">POPULAR</div>
+            <div class="eyebrow">Monthly Competitive Tier</div>
+            <h3 class="font-serif fs-2 text-cream mb-2">Court Club Membership</h3>
+            <div class="vip-price">$19 <span class="fs-5 text-muted-custom">/ player monthly</span></div>
+            <div class="vip-price-sub">For Active Competitive Players</div>
+            
+            <ul class="vip-feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> 50% Off All Weekly Tournament Entry Fees</li>
+              <li><i class="bi bi-check-circle-fill"></i> Daily Practice Ball Credits & Advanced Drills</li>
+              <li><i class="bi bi-check-circle-fill"></i> Comprehensive Real-Time Match Analytics Dashboard</li>
+              <li><i class="bi bi-check-circle-fill"></i> Priority Matchmaking Queue & Divisional Ladders</li>
+            </ul>
+
+            <a href="contact.html" class="btn-noir btn-noir-outline w-100">Join Court Club <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Package 2: Grand Slam VIP Tier -->
+        <div class="col-lg-5 reveal-slide-right" data-delay="200">
+          <div class="vip-card-package" style="border-color: var(--gold-champagne);">
+            <div class="ribbon-gold" style="background: linear-gradient(90deg, var(--tennis-primary), var(--tennis-secondary)); color: #FFFFFF;">EXCLUSIVE</div>
+            <div class="eyebrow">Annual Championship Pass</div>
+            <h3 class="font-serif fs-2 text-cream mb-2">Grand Slam Pro VIP</h3>
+            <div class="vip-price">$199 <span class="fs-5 text-muted-custom">/ annual pass</span></div>
+            <div class="vip-price-sub">For Elite Tournament Competitors</div>
+            
+            <ul class="vip-feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> Unlimited Free Entry to All Grand Slam Tournaments</li>
+              <li><i class="bi bi-check-circle-fill"></i> 1-on-1 Monthly Video Review by Certified Tennis Coaches</li>
+              <li><i class="bi bi-check-circle-fill"></i> Exclusive Custom Rackets, Grip Skins & Court Themes</li>
+              <li><i class="bi bi-check-circle-fill"></i> Personal Tournament Concierge & VIP Lounge Access</li>
+            </ul>
+
+            <a href="contact.html" class="btn-noir btn-noir-primary w-100">Claim Grand Slam VIP <i class="bi bi-trophy-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer-noir">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Left: Brand Info -->
+        <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+          <a href="index.html" class="footer-brand" id="footerLogo">
+            <img src="assets/images/brand-logo-icon.svg" alt="Tennis Game Logo" class="brand-logo-icon">
+            <span class="brand-logo-text">TENNIS <span>GAME</span></span>
+          </a>
+          <p class="footer-tagline">"Play. Compete. Conquer."</p>
+          <h4 class="font-serif text-gold fs-5 mb-3">POWER YOUR NEXT MATCH.</h4>
+          <p class="text-muted-custom text-small" style="font-size: 0.9rem;">
+            CHAMPIONSHIP MATCHES • PRO RANKINGS • REAL-TIME RALLIES • TOURNAMENTS<br>
+            Delivering high-energy tennis gameplay across all court surfaces.
+          </p>
+          <div class="social-icons mt-4">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Middle: Quick Links -->
+        <div class="col-6 col-md-6 col-lg-3">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Tournaments</a></li>
+            <li><a href="contact.html">Play Now</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Match Schedules -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <h4 class="footer-heading">Court & Match Hours</h4>
+          <div class="text-muted-custom" style="font-size: 0.92rem; line-height: 1.8;">
+            <p class="mb-2"><strong class="text-gold">Monday – Thursday:</strong><br>6:00 AM – 10:00 PM</p>
+            <p class="mb-2"><strong class="text-gold">Friday – Saturday:</strong><br>6:00 AM – 12:00 AM</p>
+            <p class="mb-0"><strong class="text-gold">Sunday:</strong><br>7:00 AM – 9:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 Tennis Game. All Rights Reserved. Master Every Rally.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
