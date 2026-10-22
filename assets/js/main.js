@@ -1,7 +1,6 @@
 /* ==========================================================================
    TENNIS GAME — Premium Interactive JavaScript
    Includes:
-   - Scroll Progress Indicator
    - Custom Desktop Cursor
    - Sticky Navigation Glass Shift
    - Scroll Reveal Animations (IntersectionObserver with stagger)
@@ -13,18 +12,6 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-
-  // 1. Scroll Progress Bar
-  const progressBar = document.createElement('div');
-  progressBar.className = 'scroll-progress-bar';
-  document.body.appendChild(progressBar);
-
-  window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = (scrollTop / docHeight) * 100;
-    progressBar.style.width = scrollPercent + '%';
-  });
 
   // 2. Custom Desktop Cursor
   if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {

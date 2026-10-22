@@ -97,18 +97,6 @@ body::before {
   color: #FFFFFF;
 }
 
-/* Top Scroll Progress Bar */
-.scroll-progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--tennis-primary), var(--tennis-secondary), var(--tennis-accent));
-  width: 0%;
-  z-index: 2000;
-  transition: width 0.1s linear;
-}
-
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -537,7 +525,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 160px 0 90px 0;
+  padding: 160px 0 170px 0;
   overflow: hidden;
   background-color: var(--bg-primary);
 }
@@ -641,7 +629,7 @@ img {
 /* Mouse Scroll Indicator */
 .hero-scroll-indicator {
   position: absolute;
-  bottom: 35px;
+  bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;
@@ -676,6 +664,24 @@ img {
 @keyframes mouseScroll {
   0% { opacity: 1; transform: translateY(0); }
   100% { opacity: 0; transform: translateY(14px); }
+}
+
+/* Avoid the scroll indicator colliding with hero buttons on short / small screens */
+@media (max-height: 820px), (max-width: 767px) {
+  .hero-scroll-indicator {
+    display: none;
+  }
+  .hero-section {
+    padding-bottom: 100px;
+  }
+}
+
+/* Themed alternate section background (replaces Bootstrap's blue/gray .bg-primary/.bg-secondary) */
+.bg-section-dark {
+  background-color: var(--bg-primary) !important;
+}
+.bg-section-alt {
+  background-color: var(--bg-secondary) !important;
 }
 
 /* --------------------------------------------------------------------------
